@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Event</title>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    </head>
+    <body>
+<header>
+    <a href="index.html" class="logo"><img src="assets/logohitoyz.png" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+            <ul class="option">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+</header>
+
+<section>
+    <div class="container-form">
+        <h1>Register Here</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" name="nama" id="nama">
+                <p id="errorName" class="error"></p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="confirm_password">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="agreement">
+                <label for="agreement">I accept the EULA</label>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="validateForm()">Submit</button>
+            </div>
+        </form>
+        <div id="errors"></div>
+    </div>
+</section>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact Us Here</h3>
+                <p>29462 N Plaza Rd, California, Missouri</p> <br>
+                <p>Email: hitoyz@gmail.com</p> <br>
+                <p>Phone: 081213488123</p>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-text">© 2023 HI-Toyz. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
